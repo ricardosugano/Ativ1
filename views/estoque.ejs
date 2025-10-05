@@ -11,16 +11,19 @@
                     <thead>
                         <tr>
                             <th></th>
-                            <th>Número:</th>
-                            <th>Valor:</th>
+                            <th>Nome:</th>
+                            <th>Preco:</th>
+                            <th>Categoria:</th>
                         </tr>
                     </thead>
                     <tbody>
                         <% estoque.forEach(estoque => { %>
                         <tr>
                             <td><img src="imgs/order.png" width="30px"></td>
-                            <td><%= estoque.numero %></td>
-                            <td><%= estoque.valor.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) %></td>
+                            <td><%= estoque.nome %></td>
+                            <td><%= estoque.preco.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) %></td>
+                            <td><%= estoque.categoria %></td>
+                    
                         </tr>
                         <% }) %>
                     </tbody>

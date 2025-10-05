@@ -4,10 +4,10 @@ const router = express.Router();
 // ROTA ESTOQUE
 router.get("/estoque", function (req, res) {
   const estoque = [
-    { nome: "Celular Motorola E22", preco: 1200, categoria: "Eletroportáteis" },
-    { nome: "Tablet Samsung", preco: 900, categoria: "Eletrônicos" },
-    { nome: "Notebook Lenovo", preco: 3200, categoria: "Computadores" },
-    { nome: "Fone Bluetooth", preco: 150, categoria: "Periféricos" },
+    { nome: "Arroz", preco: 35, categoria: "Cesta Basica" },
+    { nome: "Frango", preco: 50, categoria: "Mistura" },
+    { nome: "Feijao", preco: 20, categoria: "Cesta Basica" },
+    { nome: "Oleo Vegetal", preco: 10, categoria: "Tempero" },
   ];
   res.render("estoque", {
     estoque: estoque,

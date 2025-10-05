@@ -4,7 +4,9 @@ import DoadoresController from './controllers/DoadoresController.js'
 import IdososController from './controllers/IdososController.js'
 import VoluntariosController from './controllers/VoluntariosController.js'
 import VisitasController from './controllers/VisitasController.js'
-import FuncionariosController from './controllers/FuncionariosController.js'    
+import FuncionariosController from './controllers/FuncionariosController.js'  
+import EstoqueController from './controllers/EstoqueController.js'
+
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -14,6 +16,7 @@ app.use("/", IdososController);
 app.use("/", VoluntariosController);
 app.use("/", VisitasController);
 app.use("/", FuncionariosController);
+app.use("/", EstoqueController);
 
 
 
