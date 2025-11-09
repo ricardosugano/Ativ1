@@ -14,5 +14,13 @@
     "nodemon": "^2.0.22"
   },
   "type": "module",
-  "keywords": []
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardosugano/Ativ1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ricardosugano/Ativ1/issues"
+  },
+  "homepage": "https://github.com/ricardosugano/Ativ1#readme"
 }
