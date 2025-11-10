@@ -7,6 +7,23 @@ import VisitasController from './controllers/VisitasController.js'
 import FuncionariosController from './controllers/FuncionariosController.js'  
 import EstoqueController from './controllers/EstoqueController.js'
 
+// Importando o Sequelize
+import connection from "./config/sequelize-config.js"
+
+// Realizando a conexão com o banco de dados
+connection.authenticate().then(()=> {
+console.log("Conexão com o banco de dados feita com sucesso!")
+}).catch((error) => {
+console.log(error)
+})
+
+// Criando o banco de dados se ele não existir
+connection.query(`CREATE DATABASE IF NOT EXISTS
+asilo;`).then(() => {
+console.log("O banco de dados está criado.")
+}).catch((error) => {
+console.log(error)
+})
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));

@@ -1,6 +1,9 @@
 import express from "express";
 const router = express.Router();
 
+// Importando os Models
+import doador from "./models/Doador.js"
+
 // ROTA doadores
 router.get("/doadores", function (req, res) {
   const doadores = [
@@ -11,7 +14,7 @@ router.get("/doadores", function (req, res) {
         "Rua das Pétalas, 123, Bairro Jardim Primavera, Cidade Amor, Estado Felicidade, CEP: 12345-678",
     },
     {
-      nome: "Wager Toth",
+      nome: "Wagner Toth",
       cpf: "987.654.321-00",
       endereco:
         "Avenida Central, 456, Bairro Centro, Cidade Nova, Estado da Esperança, CEP: 98765-432",
